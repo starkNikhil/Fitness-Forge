@@ -243,6 +243,7 @@ body {
 }
 .membership-title{
   text-align: center;
+  position: relative;
 }
 .membership-card h3{
   font-size: clamp(1rem, 5vw, 2rem);
@@ -258,9 +259,7 @@ body {
   margin-top: 50px;
   height: 440px;
 }
-.membership-title {
-  position: relative;
-}
+
 
 .card-icon {
   margin-bottom: 1.2rem;
@@ -366,7 +365,7 @@ body {
 }
 
 .scrollbar-item {
-  min-width: calc(33.33% -20px);
+  min-width: calc(33.33% - 20px);
   scroll-snap-align: start;
 }
 
