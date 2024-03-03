@@ -13,15 +13,15 @@ body {
 
 .main {
   background-image: url("../Assets/bg-img.jpg");
-  background-position: center center;
+ 
   background-size: max(1200px, 100vw);
-  height: 90vh;
+  height: 658px;
   background-repeat: no-repeat;
   position: relative;
 }
 
 .main .box {
-  height: 90vh;
+  height: 658px;
   width: 100%;
   opacity: 0.28;
   background-color: black;
