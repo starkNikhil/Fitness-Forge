@@ -796,8 +796,18 @@ li {
   }
 
   .footer-section .footer-container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    margin-inline: 10%;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width:480px){
+  .footer-section .footer-container {
     grid-template-columns: 1fr;
     column-gap: 25px;
     margin-inline: 10%;
   }
+
 }
