@@ -804,6 +804,12 @@ li {
 
 
 @media (min-width: 320px) and (max-width:480px){
+
+  .container-text {
+    width: 345px;
+    padding: 0 100px;
+  }
+
   .footer-section .footer-container {
     grid-template-columns: 1fr;
     column-gap: 25px;
