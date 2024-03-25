@@ -11,9 +11,6 @@ body {
   background-color: #666666;
 }
 
-
-
-
 .navbar {
   background-color: #1d2128; /*remove after completion */
   padding: 0.5rem calc((100vw - 1200px) / 2);
@@ -219,7 +216,7 @@ body {
   margin-top: 6rem;
 }
 .membership-card.silver {
-  margin-top: 50px;
+  margin-top: 15px;
 }
 .membership-card {
   padding: 1rem;
@@ -587,11 +584,75 @@ li {
   z-index: 4;
 }
 
+@media screen and (1116px <= width <= 1152px) {
+  .logo-section a:last-child {
+    display: none;
+  }
+
+  .navbar-menu {
+    margin-right: 2rem;
+  }
+
+  .login-btn {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (1002px <= width <= 1116px) {
+  .logo-section a:last-child {
+    display: none;
+  }
+
+  .navbar-menu {
+    margin-right: 1rem;
+  }
+
+  .login-btn {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (828px <= width <= 1002px) {
+  .logo-section a:last-child {
+    display: none;
+  }
+
+  .navbar-menu {
+    margin-right: -0.4rem;
+  }
+
+  .navbar-link {
+    padding: 0 0.4rem;
+  }
+}
+
+@media screen and (769px <= width <= 828px) {
+  .logo-section a:nth-child(2) {
+    display: none;
+  }
+
+  .navbar-menu {
+    margin-right: 1rem;
+  }
+
+  .navbar-link {
+    padding: 0 0.2rem;
+  }
+
+  .login-btn {
+    padding: 0.2rem 0.2rem;
+    margin-left: 0.6rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   html.active,
   body.active {
     overflow-x: hidden;
     overflow-y: hidden;
+  }
+  .logo-section a:nth-child(2) {
+    display: none;
   }
 
   .navbar > a > span {
@@ -631,7 +692,6 @@ li {
     justify-content: space-evenly;
     align-items: center;
     visibility: visible;
-    opacity: 1;
     transition: opacity 0.2s;
   }
 
@@ -643,6 +703,10 @@ li {
     background-color: #ffffff;
     display: block;
     cursor: pointer;
+  }
+
+  .logo-image {
+    height: 7rem;
   }
 
   #mobile-menu {
@@ -667,60 +731,73 @@ li {
     margin-bottom: 10rem;
   }
 
-.hero-text{
+  .hero-text {
+    left: unset;
+  }
 
-  left: unset;
-}
-.sm-intro{
-  height: 58.5rem;
-}
+  .hero-text p {
+    font-size: 3rem;
+  }
 
-.container{
-  max-width: 720px;
-  flex-wrap: wrap;
-}
+  .sm-intro {
+    height: 84.5rem;
+  }
 
-.container-sm{
-  width: 47%;
-  padding: 0 -15px;
-  
-}
+  .container {
+    max-width: 720px;
+    flex-wrap: wrap;
+  }
 
-.classes{
-  height: 107.5rem;
-}
+  .container-sm {
+    width: 47%;
+    padding: 0 -15px;
+  }
 
-.container2{
-  flex-direction: column;
-  align-items: center;
-}
+  .icon-heading {
+    width: 150px;
+  }
 
-.membership-card{
-  width: 80%;
-  
-}
+  .container-text {
+    width: 445px;
+    padding: 0;
+  }
+  .classes {
+    height: 107.5rem;
+  }
 
-.membership-perks p{
-  font-size: 1.4rem;
-  margin-bottom: 1 rem;
-}
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.bg-orange{
-  margin: auto 14.1rem;
-}
+  .membership-card {
+    width: 80%;
+    margin-top: 20px;
+  }
 
-.blog-list{
-  flex-direction: column;
-  margin: auto 100px;
-}
+  .membership-perks p {
+    font-size: 1.4rem;
+    margin-bottom: 1 rem;
+  }
 
-.scrollbar-item{
-  min-width:100%;
-}
+  .bg-orange {
+    margin: auto 14.1rem;
+    width: 130px;
+    left: -40px;
+  }
 
-.footer-section .footer-container{
-  grid-template-columns: 1fr 1fr;
-  column-gap: 25px;
-  margin-inline: 10%;
-}
+  .blog-list {
+    flex-direction: column;
+    margin: auto 25px;
+  }
+
+  .scrollbar-item {
+    min-width: 100%;
+  }
+
+  .footer-section .footer-container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    margin-inline: 10%;
+  }
 }
