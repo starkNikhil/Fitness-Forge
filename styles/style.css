@@ -796,7 +796,7 @@ li {
   }
 
   .footer-section .footer-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 25px;
     margin-inline: 10%;
   }
