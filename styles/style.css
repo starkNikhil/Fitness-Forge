@@ -803,7 +803,7 @@ li {
 }
 
 
-@media screen and (min-width:480px){
+@media screen and (max-width:320px){
 
   .container-text {
     width: 345px;
