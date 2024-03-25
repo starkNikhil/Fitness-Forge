@@ -805,6 +805,9 @@ li {
 
 @media (min-width: 320px) and (max-width:480px){
 
+  .sm-intro{
+    height: 90rem;
+  }
   .container-text {
     width: 345px;
     padding: 0 50px;
