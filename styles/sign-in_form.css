@@ -59,6 +59,10 @@
   display: none;
 }
 
+.user-sign-in-container.deactivate{
+  display: none;
+}
+
 .user-sign-in-container.active {
   padding: 15rem 2rem;
 }
