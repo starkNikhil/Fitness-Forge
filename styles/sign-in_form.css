@@ -55,11 +55,9 @@
   transform: scale(0);
 }
 
-.user-sign-in-container .form-box.register {
-  display: none;
-}
+/* Registration Link Activation */
 
-.user-sign-in-container.deactivate{
+.user-sign-in-container .form-box.register {
   display: none;
 }
 
@@ -73,6 +71,12 @@
 
 .user-sign-in-container .form-box.register.active {
   display: inline;
+}
+
+/* Registration Link deactivate */
+
+.user-sign-in-container.deactivate{
+  display: none;
 }
 
 .user-sign-in-container .form-box.register.deactivate {
@@ -116,8 +120,8 @@
   font-size: 1em;
 }
 
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
+.input-box input:focus~label,
+.input-box input:valid~label {
   top: -5px;
 }
 
@@ -143,6 +147,14 @@
   text-underline-offset: 0.4em;
   margin-left: 1rem;
   transition: all 0.2s ease-in-out;
+}
+
+.forgot-pass:hover{
+  color: var(--secondary-color);
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+  text-underline-offset: 0.4rem;
+  margin-left: 1rem;
 }
 
 .remember-forget-pass label input {
@@ -197,3 +209,13 @@
 }
 
 
+@media screen and (max-width:768px) {
+  .user-sign-in-container{
+    z-index: 10000;
+    
+  }
+
+.login-btn .tooltip{
+  display: none;
+}
+}
