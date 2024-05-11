@@ -155,3 +155,123 @@
   font-family: var(--font-work-sans);
   text-align: center;
 }
+
+
+/* Add general styling here */
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  .main {
+    height: auto;
+    background-size: cover;
+  }
+  .hero-section {
+    top: 120px;
+    padding: 20px;
+  }
+  .gym-image {
+    grid-template-columns: 1fr;
+    width: 90%;
+    top: 80px;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  .gym-image > img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+  .about-heading {
+    text-align: center;
+    margin: 20px auto;
+    left: 0;
+  }
+  .redline {
+    left: 0;
+    margin: auto;
+  }
+  .about-text {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .join-link {
+    text-align: center;
+  }
+  .card {
+    width: calc(100% - 40px);
+    margin: 20px;
+  }
+  .card-heading {
+    text-align: center;
+    margin: 20px auto;
+    left: 0;
+  }
+  .exercise-card-img {
+    left: 0;
+    margin: 10px auto;
+  }
+}
+
+/* For screens between 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero-section {
+    top: 150px;
+    padding: 30px;
+  }
+  .gym-image {
+    top: 100px;
+    left: 50px;
+  }
+  .about-heading {
+    font-size: 24px;
+    left: 20px;
+  }
+  .redline {
+    left: 20px;
+  }
+}
+
+/* For screens between 1024px and 1439px */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main {
+    height: 72rem;
+  }
+  .hero-section {
+    top: 180px;
+    padding: 40px;
+  }
+  .gym-image {
+    top: 120px;
+    left: 100px;
+  }
+  .about-heading {
+    font-size: 28px;
+    left: 30px;
+  }
+  .redline {
+    left: 30px;
+  }
+}
+
+/* For screens larger than 1440px */
+@media screen and (min-width: 1440px) {
+  .main {
+    height: 80rem;
+  }
+  .hero-section {
+    top: 200px;
+    padding: 50px;
+  }
+  .gym-image {
+    top: 150px;
+    left: 150px;
+  }
+  .about-heading {
+    font-size: 32px;
+    left: 40px;
+  }
+  .redline {
+    left: 40px;
+  }
+}

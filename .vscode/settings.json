@@ -1,3 +1,4 @@
 {
-    "editor.experimentalInlineEdit.backgroundColoring": false
+    "editor.experimentalInlineEdit.backgroundColoring": false,
+    "liveServer.settings.port": 5501
 }
